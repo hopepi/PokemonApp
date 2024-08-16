@@ -55,7 +55,7 @@ import com.google.accompanist.coil.CoilImage
 @Composable
 fun PokemonListScreen(
     navController: NavController,
-    viewModel: PokemonListViewModel
+    viewModel: PokemonListViewModel = hiltViewModel()
 ) {
     Surface (
         color = MaterialTheme.colorScheme.background,
